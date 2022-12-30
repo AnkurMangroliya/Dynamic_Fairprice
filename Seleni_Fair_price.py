@@ -13,9 +13,6 @@ from webdriver_manager.microsoft import EdgeChromiumDriverManager
 
 driver = webdriver.Edge(service=EdgeService(EdgeChromiumDriverManager().install()))
 
-# Web scrapper for infinite scrolling page 
-# driver = webdriver.Chrome(executable_path=r"C:\Users\ankur\Downloads\chromedriver_win32\chromedriver.exe")
-# driver = webdriver.Chrome()
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.62", "Accept-Encoding":"gzip, deflate", "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "DNT":"1","Connection":"close", "Upgrade-Insecure-Requests":"1"}
 
 session = requests.Session()
